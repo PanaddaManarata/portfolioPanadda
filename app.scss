@@ -1,0 +1,175 @@
+//default of browser reset 
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script|Source+Sans+Pro&display=swap');
+
+$titleFont:'Pinyon Script', cursive;
+$titleSomething:'Source Sans Pro', sans-serif;
+$titleColor: #c89446; 
+
+
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    //background-color: pink; 
+    // if you want to center, give a width 
+}
+
+
+//------------nav-bar-----------
+nav{
+
+    width: 850px; 
+    z-index: 5;
+  
+}
+
+.logo{
+    background-color: white; 
+}
+
+.nav-bar{
+    display: flex; 
+    justify-content: space-evenly; 
+    
+    
+    li{
+        list-style: none ;
+       // justify-content: space-between; 
+
+        a{
+            color: #222133; 
+            text-decoration: none; 
+            font-family: $titleSomething; 
+            font-style: normal; 
+            font-weight: normal;
+            font-size: 18px; 
+            line-height: 18px; 
+            text-align: center; 
+            padding: 40px; 
+            
+
+            
+}
+
+    a:hover{
+   font-weight: bold; 
+    }
+
+
+    }
+}
+
+.nav-container{
+    color: rgb(20, 61, 97); 
+    display: flex; 
+    width: 100%;
+    justify-content: space-between; 
+    padding: 15px;
+    border-bottom: 1px black solid; 
+
+    
+}
+
+.header{
+    height: 100vh; 
+    z-index: 3;
+    background-color: white;
+}
+
+//----------------typewriter--------------------
+.typewriter p{
+letter-spacing: .15em; 
+margin: 0 auto; 
+overflow: auto; 
+white-space: nowrap; 
+border-right: .15em solid orange; 
+animation: typing 3.5s steps(40, end),
+blinking-cursor .5s step-end infinite; 
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 187, 0) }
+  }
+
+//----------------moving letters--------------------
+.ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+  }
+  
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+
+//----------------hamburger--------------------
+
+.hamburger{
+display: flex; 
+justify-content: space-around; 
+//this is golden !! 
+position: relative;
+}
+
+h3{
+    color: $titleColor; 
+    font-family: $titleFont;  
+    line-height: 50px; 
+    font-size: 40px; 
+
+}
+h4{
+    font-family: $titleSomething; 
+    font-style: normal; 
+    font-weight: bold; 
+    font-size: 20px; 
+    line-height: 35px; 
+    letter-spacing: 2px; 
+    color: #443928; 
+    text-transform: capitalize; 
+}
+
+.text-container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.text{
+    width: 445px; 
+
+}
+
+.frame{
+    position: absolute; 
+    z-index: -1; 
+    border: #c89446 2px solid; 
+    width: 350px;
+    height: 425px;
+    top: -21px; 
+    left: 10px; 
+
+}
