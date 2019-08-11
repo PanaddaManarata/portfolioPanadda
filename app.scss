@@ -21,6 +21,10 @@ section{
     // if you want to center, give a width 
 }
 
+h3{
+    font-family: $titleSomething; 
+}
+
 
 //------------nav-bar-----------
 nav{
@@ -73,18 +77,21 @@ nav{
     justify-content: space-between; 
     padding: 15px;
     border-bottom: 1px black solid; 
+   // background-color: rgba(255, 255, 255, 0.342); 
 
     
 }
 
 .header{
+    margin-top: 20px; 
     height: 100vh; 
     z-index: 3;
-    background-color: white;
+    background-image: url(./img/desert-sand.jpg); 
+    background-size: cover; 
 }
 
 //----------------typewriter--------------------
-.typewriter p{
+/*.typewriter p{
 letter-spacing: .15em; 
 margin: 0 auto; 
 overflow: auto; 
@@ -102,9 +109,95 @@ blinking-cursor .5s step-end infinite;
     from, to { border-color: transparent }
     50% { border-color: rgb(255, 187, 0) }
   }
+*/
+//----------------moving text--------------------
 
+  .type h3{
+    border-right: .15em solid orange;
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: black; 
+    font-family: $titleSomething; 
+    letter-spacing: 3px; 
+    margin-left: 40px;  
+    padding: 5px; 
+    font-weight: lighter; 
+    
+
+    
+  }
+  .type h3:nth-child(1) {
+    width: 15em;
+    animation: type 5s steps(35, end);
+    animation-fill-mode: forwards;
+    margin-top: 80px; 
+  }
+  
+  .type h3:nth-child(2) {
+    width: 10em; 
+    opacity: 0;
+    animation: type2 8s steps(35, end);
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+  }
+  
+  .type h3:nth-child(3) {
+    width: 2em;
+    opacity: 0;
+    animation: type3 2s steps(4, end), blink .5s step-end infinite alternate;
+    animation-delay: 14s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+   
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
 //----------------moving letters--------------------
-.ml9 {
+/*.ml9 {
     position: relative;
     font-weight: 200;
     font-size: 4em;
@@ -124,7 +217,7 @@ blinking-cursor .5s step-end infinite;
     display: inline-block;
     line-height: 1em;
   }
-
+*/
 //----------------hamburger--------------------
 
 .hamburger{
