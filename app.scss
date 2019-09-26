@@ -1,0 +1,151 @@
+//default of browser reset 
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script|Source+Sans+Pro&display=swap');
+
+$titleFont:'Pinyon Script',
+cursive;
+$titleSomething:'Source Sans Pro',
+sans-serif;
+$titleColor: #c89446;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h3 {
+  text-align: center;
+}
+
+.landingimg {
+  padding: 25px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(img/menu.svg);
+}
+
+#profilepicture {
+  height: 45vh;
+  width: 75vw;
+  margin: 0 auto;
+  background-color: rgb(243, 243, 129);
+}
+
+#profiletext {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.skillicon {
+  padding: 10px;
+  text-align: center;
+
+  img {
+    width: 50px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+
+
+section {
+padding-top: 70px; 
+  max-width: 1200px;
+  height: 100vh;
+  margin-bottom: 50px;
+  //background-color: pink; 
+  // if you want to center, give a width 
+}
+
+h3 {
+  font-family: $titleSomething;
+}
+
+
+//------------nav-bar-----------
+
+nav {
+  width: 100vw;
+  background-color: white;
+
+  .navbar-brand {
+    color: #222133;
+  }
+
+  li {
+    list-style: none;
+    // justify-content: space-between; 
+
+    a {
+      color: #222133;
+      text-decoration: none;
+      font-family: $titleSomething;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+      text-align: center;
+      padding: 20px;
+
+    }
+
+    a:hover {
+      font-weight: bolder;
+      color: #0b0b11;
+    }
+  }
+}
+
+/*.nav-container {
+  color: rgb(20, 61, 97);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  // background-color: rgba(255, 255, 255, 0.342); }
+*/
+
+
+
+#header {
+  padding-top: 70px;
+  height: 90vh;
+  background-image: url(./img/desk.jpeg);
+  background-size: cover;
+}
+
+
+

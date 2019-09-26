@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Pinyon+Script|Source+Sans+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h3 {
+  text-align: center;
+}
+
+.landingimg {
+  padding: 25px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(img/menu.svg);
+}
+
+#profilepicture {
+  height: 45vh;
+  width: 75vw;
+  margin: 0 auto;
+  background-color: #f3f381;
+}
+
+#profiletext {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.skillicon {
+  padding: 10px;
+  text-align: center;
+}
+
+.skillicon img {
+  width: 50px;
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+section {
+  padding-top: 70px;
+  max-width: 1200px;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+nav {
+  width: 100vw;
+  background-color: white;
+}
+
+nav .navbar-brand {
+  color: #222133;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #222133;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  padding: 20px;
+}
+
+nav li a:hover {
+  font-weight: bolder;
+  color: #0b0b11;
+}
+
+/*.nav-container {
+  color: rgb(20, 61, 97);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  // background-color: rgba(255, 255, 255, 0.342); }
+*/
+#header {
+  padding-top: 70px;
+  height: 90vh;
+  background-image: url(./img/desk.jpeg);
+  background-size: cover;
+}
+/*# sourceMappingURL=app.css.map */
